@@ -1,25 +1,24 @@
 export class Paints {
-    // "vallejo", games workshop
-    brandName: string;
-    // "bugmans glow"
-    colorName: string;
-    // actual technical pigment name CADMIUM RED 17
-    artistColorName: string;
-    // vallejo - ice yellow; moddel-117
-    paintId: number;
+  // "vallejo", games workshop
+  brandName: string;
+  // "bugmans glow"
+  colorName: string;
+  // actual technical pigment name CADMIUM RED 17
+  artistColorName: string;
+  // vallejo - ice yellow; moddel-117
+  paintId: number;
 
-    typeOfPaint: tyeOfPaint;
+  typeOfPaint: tyeOfPaint;
 
-    price: number;
+  price: number;
 }
 
 enum tyeOfPaint {
-    acrylic = 'acrylic',
-    oil = 'oil',
-    metallic = 'metallic', 
-    enamel = 'enamel',
-    contrast = 'contrast',
-    wash = 'wash',
-    ink = 'ink',
-
+  acrylic = 'acrylic',
+  oil = 'oil',
+  metallic = 'metallic',
+  enamel = 'enamel',
+  contrast = 'contrast',
+  wash = 'wash',
+  ink = 'ink',
 }
