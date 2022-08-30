@@ -8,12 +8,12 @@ export class Paints {
   // vallejo - ice yellow; moddel-117
   paintId: number;
 
-  typeOfPaint: tyeOfPaint;
+  typeOfPaint: typeOfPaint;
 
   price: number;
 }
 
-enum tyeOfPaint {
+enum typeOfPaint {
   acrylic = 'acrylic',
   oil = 'oil',
   metallic = 'metallic',
