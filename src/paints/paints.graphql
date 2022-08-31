@@ -1,0 +1,24 @@
+type Paint {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreatePaintInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdatePaintInput {
+  id: Int!
+}
+
+type Query {
+  paints: [Paint]!
+  paint(id: Int!): Paint
+}
+
+type Mutation {
+  createPaint(createPaintInput: CreatePaintInput!): Paint!
+  updatePaint(updatePaintInput: UpdatePaintInput!): Paint!
+  removePaint(id: Int!): Paint
+}
