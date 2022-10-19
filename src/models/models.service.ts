@@ -1,17 +1,15 @@
-import { Injectable } from '@nestjs/common';
-import { Model } from './interfaces/model.interface';
+import { Injectable, Inject } from '@nestjs/common';
+import { Model } from './model.entity';
+import { Repository } from 'typeorm';
 
 @Injectable()
 export class ModelsService {
-    private readonly models: Model[] = [{
-        brandName: 'test',
-        colorName: 'Red',
-        artistColorName: 'test',
-        paintId: 1234,
-        price: 100
-    }];
+    constructor(
+        @Inject('MODEL_REPOSITORY')
+        private modelRepository: Repository<Model>,
+    ) {}
 
-    findAll(): Model[] {
-        return this.models
+    findAll(): Promise<Model[]> {
+        return this.modelRepository.find();
     }
 }

@@ -1,6 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-
 @Entity()
 export class Model {
     @PrimaryGeneratedColumn()
@@ -20,4 +19,6 @@ export class Model {
 
     @Column()
     price: number;
+
+    
 }
